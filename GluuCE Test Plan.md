@@ -10,3 +10,5 @@
 |Gluu1.8|Passport| case 1:- Add provider like github ,google,  fb.<br>case 2:- Testing user login via passport service|||
 |Gluu1.9|Casa|case 1:- enable casa<br>case 2:- enroll devices to check user registration.|||
 |Gluu1.10|Services|case 1:- start/stop/restart all the services and container|||
+|Gluu1.11|Upgrade|case 1:- Test upgrade from previous minor version<br>case 2:- Test upgrade from previous major version|||
+|Gluu1.12|Misc|case 1:- Test with remote LDAP<br> case 2:- Test adding Passport and Shibboleth components post installation|||
