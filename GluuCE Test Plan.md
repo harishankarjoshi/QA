@@ -1,3 +1,5 @@
+Gluu functional Test Plan
+
 |Test Case ID| Feature                                                                  | Test Case | Assigned | Status |
 |:-----------|:-------------------------------------------------------------------------|:----------|----------|--------|
 |Gluu1.1|Login & Registration                                | case 1:- setup smtp details<br> case 2:- without captcha enabled <br>case 3:- with captcha<br>case 4:- registration confirmation mail<br>case 5:- user can edit/add his self information like password ,country etc<br>case 6:- self passport reset Functionality<br>case 7:- forgot password Functionality without captcha<br>case 8:- forgot password Functionality with captcha|||
