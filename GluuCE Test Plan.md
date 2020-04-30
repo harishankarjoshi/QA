@@ -14,4 +14,5 @@ Gluu functional Test Plan
 |Gluu1.10|Services|case 1:- start/stop/restart all the services and container|||
 |Gluu1.11|Upgrade|case 1:- Test upgrade from previous minor version<br>case 2:- Test upgrade from previous major version|||
 |Gluu1.12|SCIM|case 1:- Test SCIM with test mode and with SCIM client<br>case 2:- Test SCIM after jks keys rollover|||
-|Gluu1.13|Misc|case 1:- Test with remote LDAP<br> case 2:- Test adding Passport and Shibboleth components post installation|||
+|Gluu1.13|Radius|case 1:- Check Radius client and various configurations|||
+|Gluu1.14|Misc|case 1:- Test with remote LDAP<br> case 2:- Test adding Passport and Shibboleth components post installation|||
