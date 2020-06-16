@@ -34,13 +34,13 @@ Directory `/opt/gluu/python/libs` has 6 .py scripts starting with "casa"
 
 jetty user is able to copy/replace files in `/opt/gluu/python/libs`
 
-Directory `/opt/gluu/jetty/oxauth/custom/lib` contains twilio and jsmpp jar files
+Directory `/opt/gluu/jetty/oxauth/custom/libs` contains twilio and jsmpp jar files
 
 
-
+<!--
 ## Uninstallation
 
-Run `casa_cleanup.py` found in `/install/community-edition`
+Run `casa_cleanup.py` found in `/install/community-edition-setup`
 
 Successful messages are shown
 
@@ -55,7 +55,7 @@ The 2 casa scripts (person authentication & client registration) were removed
 The gluu-casa client was removed
 
 The casa scripts in `/opt/gluu/python/libs` were removed
-
+-->
 
 ## Service survival
 
@@ -129,7 +129,7 @@ Sucessful pages for logout are shown in both cases
 
 ## Admin features
 
-run `touch /opt/gluu/jetty/casa/.administrable`
+Pre-requisite for testing admin features: run `touch /opt/gluu/jetty/casa/.administrable`
 
 ### Log level
 
@@ -238,7 +238,7 @@ Go to `Users` > `Manage people` and search the testing user, click on it
 
 Flush all credentials for the testing user (at the bottom of the form remove all entries, if any, in authentication methods panel)
 
-Remove supergluu and google authenticator entries on mobile for this user (if any)
+Remove supergluu and google authenticator entries on the smartphone for this user (if any)
 
 
 (II)
@@ -391,6 +391,8 @@ The new enrollment appears in the upper panel
 
 This subsection requires a security key or an smartphone with the krypton app (as well as the krypton extension installed in the browser)
 
+The steps described below **have** to be tested in Firefox and Chrome at least (hopefully recent versions)
+
 (I)
 
 Login to Casa with the testing user
@@ -435,9 +437,13 @@ The new enrollment appears in the upper panel
 
 ### FIDO2
 
-The same prerequisites and steps of u2f apply here
+The same conditions and steps of u2f apply here
 
 Ensure the fido2 service is running
+
+Menu item for fido2 keys is simply labelled "Security Keys"
+
+Trying to enroll the same key twice has to fail
 
 ## Password reset
 
@@ -838,7 +844,8 @@ Check all entries were migrated:
 
 	- u2f credentials are not listed in Casa
 
-	
+Check the keys work for authenticating (2FA)
+
 ## APIs testing
 
 Use the dummy enrollment client. See https://gluu.org/docs/casa/4.2/developer/#apis-for-credential-enrollment,
