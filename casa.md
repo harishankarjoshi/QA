@@ -324,6 +324,16 @@ A success message is shown
 
 Only 1 phone appears in the upper panel
 
+Click on the edit icon for the listed entry
+
+A dialog appears prompting a nickname
+
+Enter a nick and click OK
+
+A success message is shown
+
+Enrollment name is refreshed in the upper panel
+
 
 ### OTP
 
@@ -386,6 +396,130 @@ A success message is shown
 
 The new enrollment appears in the upper panel
 
+(III)
+
+Click on the edit icon for the listed entry
+
+A dialog appears prompting a nickname
+
+Enter a nick and click OK
+
+A success message is shown
+
+Enrollment name is refreshed in the upper panel
+
+### Super Gluu
+
+This subsection requires SuperGluu app installed on the smartphone
+
+(I)
+
+Login to Casa with the testing user
+
+Click on Super Gluu Devices on the left
+
+Open the mobile app
+
+In Casa, click on Ready 
+
+A popup appears and a QR code is shown
+
+Click on Cancel
+
+The popup disappears
+
+Click on Ready again
+
+A popup appears and a QR code is shown
+
+Scan the QR code with SuperGluu 
+
+An approval screen is shown, click on Approve
+
+After some seconds, new form fields appear to set a name or cancel the enrollment
+
+Click on Cancel
+
+The UI restores as when the page was initially visited
+
+In the supergluu menu go to Keys
+
+Remove the entry corresponding to this server
+
+(II)
+
+In Casa, click on Ready
+
+A popup appears and a QR code is shown
+
+Scan the QR code with SuperGluu 
+
+An approval screen is shown, click on Approve
+
+After some seconds, new form fields appear to set a name or cancel the enrollment
+
+Enter a nickname and click on Add
+
+A success message is shown
+
+The new enrollment appears in the upper panel
+
+
+(III)
+
+Click on Ready
+
+A popup appears and a QR code is shown
+
+Scan the QR code with SuperGluu 
+
+An approval screen is shown, click on Approve
+
+After some seconds, an error should appear 
+
+
+(IV)
+
+Click on the edit icon for the listed entry
+
+A dialog appears prompting a nickname
+
+Enter a nick and click OK
+
+A success message is shown
+
+Enrollment name is refreshed in the upper panel
+
+<!--
+(V)
+
+Login to oxTrust
+
+Go to `Configuration` > `Person Authentication Scripts`
+
+Locate the super_gluu script and add the required for removing the ads in the mobile app (ie `license_file`)
+
+Wait 1 minute
+
+In Casa, remove the existing supergluu enrollment
+
+A success message is shown
+
+Click on Ready
+
+A popup appears and a QR code is shown
+
+Scan the QR code with SuperGluu
+
+Click on decline
+
+No ads should appear in the application
+
+Wait until the the progress bar is filled 
+
+The UI is restored
+
+-->
 
 ### U2F
 
@@ -433,6 +567,19 @@ Enter a nickname and press Add
 A success message is shown
 
 The new enrollment appears in the upper panel
+
+
+(III)
+
+Click on the edit icon for the listed entry
+
+A dialog appears prompting a nickname
+
+Enter a nick and click OK
+
+A success message is shown
+
+Enrollment name is refreshed in the upper panel
 
 
 ### FIDO2
@@ -629,6 +776,45 @@ Login to oxTrust as administrator
 
 Delete the property previously added to the custom script 
 
+(VII)
+
+In the casa custom script add a custom property named "mobile_methods", sets its value to otp
+
+Logout
+
+Login to casa with the testing user
+
+Ensure there is one otp credential, a phone number, and other of a different kind
+
+In the Home page, turn 2FA on
+
+In the smartphone visit Casa
+
+Enter the user name and password
+
+An OTP will be requested in the next page, not a credential of other kind
+
+Enter the passcode
+
+You get access to casa
+
+Logout from the mobile browser
+
+(VIII)
+
+In the desktop browser, set the value of "mobile_methods", to twilio_sms
+
+In the smartphone visit Casa
+
+Enter the user name and password
+
+An OTP received via SMS will be requested in the next page, not a credential of other kind
+
+Enter the passcode
+
+You get access to casa
+
+Logout from the mobile browser
 
 ## Custom branding plugin
 
@@ -817,6 +1003,13 @@ Scenarios to test:
 ### OTHER (oauth, oidc, etc.)
 
 Use the same steps as in SAML section, however, integrate a social site or an external OP (such a Gluu Server) instead of a SAML provider (IDP)
+
+
+## 2FA settings plugin
+
+Detailed instructions are here: https://gluu.org/docs/casa/4.2/plugins/cert-authn/
+
+Ensure you use the 4.2-snapshot or 4.2.Final jar, not an older version
 
 
 ## Certificate authentication plugin
