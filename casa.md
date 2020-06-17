@@ -584,7 +584,7 @@ Enrollment name is refreshed in the upper panel
 
 ### FIDO2
 
-The same conditions and steps of u2f apply here
+The same conditions and steps of u2f apply here. U2F keys are compatible with FIDO2
 
 Ensure the fido2 service is running
 
