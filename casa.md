@@ -456,7 +456,7 @@ Scan the QR code with SuperGluu
 
 An approval screen is shown, click on Approve
 
-After some seconds, new form fields appear to set a name or cancel the enrollment
+After some seconds, the popup autocloses and new form fields appear to set a name or cancel the enrollment
 
 Enter a nickname and click on Add
 
