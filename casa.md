@@ -1049,3 +1049,12 @@ or, code a client.
 
 Follow steps at https://gluu.org/docs/casa/4.2/administration/localization/#adding-internationalization-labels to add
 a couple of languages.
+
+## Sample plugins
+
+Check if sample plugins still run as expected:
+
+- authentication-script-properties
+- clients-management
+- helloworld
+- sample-cred-plugin
