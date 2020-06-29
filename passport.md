@@ -2,7 +2,7 @@
 
 |acr|provider type|default flow|default + request for email|default + email linking|preselecting provider|idp-initiated|
 |-|-|-|-|-|-|-|
-|passport-saml|IDP|SUCCESS|SUCCESS|SUCCESS|||
+|passport-saml|IDP||||||
 |passport-social|oauth provider|||||NA|
 |passport-social|oidc provider - straight||-|-|-|NA|
 |passport-social|oidc provider - with oxd||-|-|-|NA|
