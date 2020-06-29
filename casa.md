@@ -88,6 +88,11 @@ Restart VM and wait several minutes
 In a browser hit /casa/health-check. An OK message is displayed
 
 
+## Post-installation
+
+This is a side test. In a Gluu installation without casa, try adding it [post-install](https://www.gluu.org/docs/casa/4.2/administration/installation/#installation-via-linux-packages). Do the same checks of sections [installation](#installation) and [service survival](#service-survival) above. 
+
+
 ## Auth flows with 2nd app
 
 (I)
