@@ -356,7 +356,7 @@ This subsection requires an smartphone with Google Authenticator installed or an
 
 Login to Casa with the testing user
 
-Click on OTP tokens numbers on the left
+Click on OTP tokens on the left
 
 Click on Soft token
 
@@ -368,7 +368,7 @@ Click on ready. A QR code appears
 
 Scan the code with the app
 
-A new entry appears listed in the app with a code
+You are prompted to enter a code
 
 Enter a wrong code and press validate
 
@@ -397,7 +397,7 @@ Click on ready. A QR code appears
 
 Scan the code with the app
 
-A new entry appears listed in the app with a code
+You are prompted to enter a code
 
 Enter the code and press validate
 
@@ -740,7 +740,7 @@ Login to Casa as admin
 
 Go to `Administration Console` > `Enabled authentication methods`
 
-Uncheck the row corresponding to the credential type that still remains for the testing user
+Uncheck all rows <!--the row corresponding to the credential type that still remains for the testing user-->
 
 Click on Save
 
